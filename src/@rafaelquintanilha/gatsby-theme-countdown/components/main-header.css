@@ -15,5 +15,6 @@
     }
     .main-header--logo > picture > img {
         position: inherit !important;
+        padding-bottom: 2vh !important;
     }
 }
