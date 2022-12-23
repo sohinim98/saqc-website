@@ -1,0 +1,15 @@
+.main-header {
+    max-width: 780px;
+    padding-top: 2vh;
+}
+.main-header--intro {
+    padding-top: 2vh;
+}
+.donation {
+    color: white;
+}
+@media screen and (max-width: 600px) {
+    .main-header {
+        font-size: 16px;
+    }
+}

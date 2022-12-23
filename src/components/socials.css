@@ -1,0 +1,10 @@
+.social-icon {
+    width: 40px;
+    height: 40px;
+    stroke: white;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    padding: 5px;
+}
