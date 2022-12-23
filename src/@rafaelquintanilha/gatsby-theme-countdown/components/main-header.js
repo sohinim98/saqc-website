@@ -5,8 +5,9 @@ import "./main-header.css"
 const MainHeader = ({ text }) => (
   <div style={{height: "100%"}} className="main-header">
     <Image
-      src="logo.png"
-      alt="South Asian Queer Collective logo"
+        className="main-header--logo"
+        src="logo.png"
+        alt="South Asian Queer Collective logo"
     />
     <p className="main-header--intro">
       "SAQC’s purpose is to rewrite the narrative.
