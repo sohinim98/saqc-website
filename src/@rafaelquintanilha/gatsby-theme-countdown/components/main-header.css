@@ -11,7 +11,7 @@
 @media screen and (max-width: 600px) {
     .main-header {
         font-size: 14px;
-        padding-bottom: 4vh;
+        padding-bottom: 6vh;
     }
     .main-header--logo > picture > img {
         position: inherit !important;
