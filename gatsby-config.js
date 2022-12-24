@@ -5,7 +5,6 @@
  */
 
 const path = require(`path`);
-const favicon = require(`src/images`);
 
 module.exports = {
     siteMetadata: {
@@ -13,7 +12,7 @@ module.exports = {
         description: "SAQC amplifies queer South Asian voices often silenced by white, cis-heteronormative stories within the mainstream.",
         author: "Sohini Mukherjee on behalf of SAQC",
         url: "https://theysiqueers.ca/",
-        image: favicon,
+        image: "https://www.linkpicture.com/q/favicon_22.png",
     },
     plugins: [
         {
