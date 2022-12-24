@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import "./layout.css"
+import Seo from "./seo";
 
 const Layout = ({ children }) => {
   useStaticQuery(graphql`
@@ -29,16 +30,17 @@ const Layout = ({ children }) => {
           padding: `var(--size-gutter)`,
         }}
       >
-        <main>{children}</main>
-        <footer
+          <Seo/>
+          <main>{children}</main>
+          <footer
           style={{
             marginTop: `var(--space-5)`,
             fontSize: `var(--font-sm)`,
           }}
         >
-          © {new Date().getFullYear()} &middot;
-          {` `} SAQC
-        </footer>
+              © {new Date().getFullYear()} &middot;
+              {` `} SAQC
+          </footer>
       </div>
     </>
   )

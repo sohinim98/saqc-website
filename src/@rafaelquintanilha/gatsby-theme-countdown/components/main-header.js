@@ -1,9 +1,11 @@
 import React from "react";
 import Image from "../../../components/image";
 import "./main-header.css"
+import Seo from "../../../components/seo";
 
 const MainHeader = ({ text }) => (
   <div style={{height: "100%"}} className="main-header">
+      <Seo/>
     <Image
         className="main-header--logo"
         src="logo.png"
@@ -15,7 +17,7 @@ const MainHeader = ({ text }) => (
       silenced by white, cis-heteronormative stories within the mainstream.
       We want our community to feel seen.
     </p>
-    <p>
+    <p className="main-header--sub-description">
       This is a safe and creative space for queer, South Asian, (Tkaronto)
       Toronto-based artists. We are a not-for-profit collective and all
       proceeds are donated to &nbsp;

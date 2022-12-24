@@ -17,3 +17,11 @@
         position: inherit !important;
     }
 }
+@media screen and (max-height: 958px) {
+    .main-header {
+        font-size: 14px;
+    }
+    .main-header--sub-description {
+        display: none;
+    }
+}

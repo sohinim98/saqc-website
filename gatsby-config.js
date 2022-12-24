@@ -8,7 +8,8 @@ const path = require(`path`);
 
 module.exports = {
     siteMetadata: {
-        title: "SAQC",
+        title: "South Asian Queer Collective",
+        description: "SAQC amplifies queer South Asian voices often silenced by white, cis-heteronormative stories within the mainstream.",
         author: "Sohini Mukherjee on behalf of SAQC",
         url: "https://theysiqueers.ca/"
     },
@@ -35,10 +36,15 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
+                name: "images",
                 path: path.join(__dirname, `src`, `images`),
             },
+            __key: "images",
         },
         `gatsby-plugin-sharp`,
-        `gatsby-transformer-sharp`
+        `gatsby-transformer-sharp`,
+        'gatsby-plugin-image',
+        `gatsby-plugin-react-helmet`,
+        `gatsby-remark-images`,
     ],
 }
