@@ -8,7 +8,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import "./layout.css"
-import Seo from "./seo";
+import favicon from "../images/favicon.png"
+import Helmet from "react-helmet"
 
 const Layout = ({ children }) => {
   useStaticQuery(graphql`
@@ -30,7 +31,9 @@ const Layout = ({ children }) => {
           padding: `var(--size-gutter)`,
         }}
       >
-          <Seo/>
+          <Helmet>
+              <meta property='og:image' content={ favicon } />
+          </Helmet>
           <main>{children}</main>
           <footer
           style={{

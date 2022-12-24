@@ -1,11 +1,14 @@
 import React from "react";
 import Image from "../../../components/image";
 import "./main-header.css"
-import Seo from "../../../components/seo";
+import Helmet from "react-helmet";
+import favicon from "../../../images/favicon.png";
 
 const MainHeader = ({ text }) => (
   <div style={{height: "100%"}} className="main-header">
-      <Seo/>
+      <Helmet>
+          <meta property='og:image' content={ favicon } />
+      </Helmet>
     <Image
         className="main-header--logo"
         src="logo.png"
