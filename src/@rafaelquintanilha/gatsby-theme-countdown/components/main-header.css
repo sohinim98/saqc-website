@@ -11,13 +11,16 @@
 @media screen and (max-width: 600px) {
     .main-header {
         font-size: 14px;
-        padding-bottom: 6vh;
+        padding-bottom: 10vh;
     }
     .main-header--logo > picture > img {
         position: inherit !important;
     }
     .main-header--audio {
         padding-top: 54px;
+    }
+    .main-header--sub-description {
+        display: none;
     }
 }
 @media screen and (min-width: 700px) and (max-height: 958px) {

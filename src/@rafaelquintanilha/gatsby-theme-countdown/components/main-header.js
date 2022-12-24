@@ -5,10 +5,13 @@ import Piya from "../../../audio/piya-tose-naina-lage-re.mp3"
 
 const MainHeader = ({ text }) => (
   <div style={{height: "100%"}} className="main-header">
-      <audio id="player" controls autoPlay loop className="main-header--audio">
-          <source src={Piya} type="audio/mp3"/>
-          Your browser does not support the audio element.
-      </audio>
+      <div className="main-header--audio">
+          <p>track of the month खास आपके लिए</p>
+          <audio id="player" controls autoPlay loop>
+              <source src={Piya} type="audio/mp3"/>
+              Your browser does not support the audio element.
+          </audio>
+      </div>
     <Image
         className="main-header--logo"
         src="logo.png"
