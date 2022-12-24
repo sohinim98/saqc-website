@@ -1,9 +1,14 @@
 import React from "react";
 import Image from "../../../components/image";
 import "./main-header.css"
+import Piya from "../../../audio/piya-tose-naina-lage-re.mp3"
 
 const MainHeader = ({ text }) => (
   <div style={{height: "100%"}} className="main-header">
+      <audio id="player" controls autoPlay loop className="main-header--audio">
+          <source src={Piya} type="audio/mp3"/>
+          Your browser does not support the audio element.
+      </audio>
     <Image
         className="main-header--logo"
         src="logo.png"
@@ -29,7 +34,7 @@ const MainHeader = ({ text }) => (
       <br/>
       Come, join us or collaborate!"
     </p>
-    <p class="main-header--signature">— South Asian Queer Collective</p>
+    <p className="main-header--signature">— South Asian Queer Collective</p>
   </div>
 );
 
