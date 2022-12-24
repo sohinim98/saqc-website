@@ -17,7 +17,7 @@
         position: inherit !important;
     }
 }
-@media screen and (min-width: 600px) and (max-height: 958px) {
+@media screen and (min-width: 700px) and (max-height: 958px) {
     .main-header {
         font-size: 14px;
     }
