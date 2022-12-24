@@ -5,13 +5,15 @@
  */
 
 const path = require(`path`);
+const favicon = require(`src/images`);
 
 module.exports = {
     siteMetadata: {
         title: "South Asian Queer Collective",
         description: "SAQC amplifies queer South Asian voices often silenced by white, cis-heteronormative stories within the mainstream.",
         author: "Sohini Mukherjee on behalf of SAQC",
-        url: "https://theysiqueers.ca/"
+        url: "https://theysiqueers.ca/",
+        image: favicon,
     },
     plugins: [
         {
