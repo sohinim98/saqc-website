@@ -1,0 +1,29 @@
+:root {
+}
+.background {
+    /*note: can cause scrolling issues*/
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(ellipse at center, #4248ee 0%, #080b5b 100%);
+}
+.logo {
+    width: 200px;
+}
+.nav-bar {
+    display:flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+}
+.nav-bar--icon {
+    width: 40px;
+    height: 40px;
+    stroke: white;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}

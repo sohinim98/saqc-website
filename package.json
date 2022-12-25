@@ -7,6 +7,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "3d-react-carousal": "^5.0.0",
     "@rafaelquintanilha/gatsby-theme-countdown": "^1.0.10",
     "assert": "^2.0.0",
     "bootstrap": "^5.2.3",
@@ -21,7 +22,8 @@
     "gatsby-transformer-sharp": "^5.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-feather": "^2.0.10"
+    "react-feather": "^2.0.10",
+    "swr": "^2.0.0"
   },
   "devDependencies": {
     "prettier": "^2.8.0"

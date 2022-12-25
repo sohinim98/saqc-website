@@ -15,19 +15,20 @@ module.exports = {
         image: "https://www.linkpicture.com/q/favicon_22.png",
     },
     plugins: [
-        {
-            resolve: "@rafaelquintanilha/gatsby-theme-countdown",
-            options: {
-                basePath: "/",
-                targetDate: "2023-01-12 12:00:00",
-                mainHeader: " ",
-                secondaryHeader: " ",
-                hideGithubButton: true,
-                hideWhatsappShareButton: true,
-                hideTwitterShareButton: true,
-                hideFacebookShareButton: true
-            }
-        },
+        // theme used for pre-launch website
+        // {
+        //     resolve: "@rafaelquintanilha/gatsby-theme-countdown",
+        //     options: {
+        //         basePath: "/",
+        //         targetDate: "2023-01-12 12:00:00",
+        //         mainHeader: " ",
+        //         secondaryHeader: " ",
+        //         hideGithubButton: true,
+        //         hideWhatsappShareButton: true,
+        //         hideTwitterShareButton: true,
+        //         hideFacebookShareButton: true
+        //     }
+        // },
         {
             resolve: "gatsby-plugin-manifest",
             options: {
@@ -41,6 +42,14 @@ module.exports = {
                 path: path.join(__dirname, `src`, `images`),
             },
             __key: "images",
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: "pages",
+                path: path.join(__dirname, `src`, `pages`),
+            },
+            __key: "pages",
         },
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
