@@ -27,3 +27,11 @@
     stroke-linejoin: round;
     fill: none;
 }
+/*Audio Player*/
+@media screen and (min-width:1380px) {
+    .audio {
+        /*position:absolute;*/
+        /*top:20px;*/
+        /*right:0;*/
+    }
+}
