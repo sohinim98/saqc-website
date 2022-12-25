@@ -6,7 +6,7 @@ import { Home } from 'react-feather';
 
 function App() {
     return (
-        <div className="Team">
+        <div className=".background">
             <ul className="nav-bar">
                 <li>
                     <Link to="/">
