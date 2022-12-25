@@ -19,7 +19,8 @@
     .main-header--audio {
         padding-top: 54px;
     }
-    .main-header--sub-description {
+    .main-header--sub-description,
+    .main-header--signature {
         display: none;
     }
 }

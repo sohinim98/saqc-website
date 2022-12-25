@@ -18,7 +18,7 @@ const MainHeader = ({ text }) => (
         alt="South Asian Queer Collective logo"
     />
     <p className="main-header--intro">
-      "SAQC’s purpose is to rewrite the narrative.
+      SAQC’s purpose is to rewrite the narrative.
       We aim to amplify the voices of queer South Asian people which are often
       silenced by white, cis-heteronormative stories within the mainstream.
       We want our community to feel seen.
@@ -35,7 +35,7 @@ const MainHeader = ({ text }) => (
         https://acas.org/programs/for-youth/
       </a>.
       <br/>
-      Come, join us or collaborate!"
+      Come, join us or collaborate!
     </p>
     <p className="main-header--signature">— South Asian Queer Collective</p>
   </div>
