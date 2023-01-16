@@ -4,8 +4,7 @@
     /*note: can cause scrolling issues*/
     position: absolute;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
     background: radial-gradient(ellipse at center, #4248ee 0%, #080b5b 100%);
 }
 .logo {
@@ -35,3 +34,40 @@
         /*right:0;*/
     }
 }
+.message-of-the-month {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: Roboto, Sans-Serif;
+    font-size: 20px;
+    max-width: 1024px;
+    padding: 20px;
+    margin: auto;
+    z-index: 2;
+}
+/*Team Page Styles Begin*/
+.team-cover {
+    height: 90vh;
+}
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 52px;
+}
+
+.team-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.team-container {
+    color: white;
+    font-family: Roboto, Sans-Serif;
+    padding: 0 16px;
+    max-width: 350px;
+}
+@media (min-width:1024px)  {
+    .team {
+        flex-direction: row;
+    }
+}
+/*Team Page Styles End*/

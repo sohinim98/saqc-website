@@ -7,9 +7,10 @@ const Credits = () => (
     <Socials/>
     <footer
       style={{
-        marginTop: `var(--space-5)`,
-        fontSize: `var(--font-sm)`,
-        textAlign: `center`
+          color: `white`,
+          marginTop: `var(--space-5)`,
+          fontSize: `var(--font-sm)`,
+          textAlign: `center`
       }}
     >
       © {new Date().getFullYear()} &middot;

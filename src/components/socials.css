@@ -1,3 +1,10 @@
+.socials {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
 .social-icon {
     width: 40px;
     height: 40px;
@@ -8,3 +15,4 @@
     fill: none;
     padding: 5px;
 }
+

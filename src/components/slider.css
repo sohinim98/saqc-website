@@ -10,7 +10,7 @@
     width: 100%;
     margin: -0px auto 0px -50%;
     overflow: hidden;
-    height: 553px;
+    height: 1000px;
 }
 
 .react-3d-carousel .slider-container .slider-content {
@@ -68,14 +68,6 @@
     );
 }
 
-.bad__alignment {
-    background-image: linear-gradient(
-            to bottom left,
-            #ff0000 50%,
-            transparent 50%
-    );
-}
-
 .rectangle > div {
     font-family: OpenSans;
     font-size: 11px;
@@ -86,19 +78,8 @@
     letter-spacing: 0.53px;
     color: #ffffff;
 }
-.rectangle .alignment__value {
-    font-family: OpenSans;
-    font-size: 14px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: 0.31px;
-    color: #ffffff;
-    margin-top: 4px;
-}
 
-.hero__wrapper {
+.image_wrapper {
     position: relative;
     z-index: 1;
     padding: 5px;
@@ -108,18 +89,18 @@
     background-color: #ffffff;
 }
 
-.hero__img {
-    width: 388px;
-    height: 553px;
+.carouse_img {
+    width: 701px;
+    height: 1000px;
     margin: 5px 5px 0;
     padding: 0 0;
 }
 .mask {
     position: absolute;
     width: calc(408px - 80px);
-    height: 272px;
+    height: 20px;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(211, 211, 211, 0.7);
     z-index: 2;
     bottom: 0;
     padding-top: 30px;
@@ -130,10 +111,9 @@
     left: 50%;
     transform: translateX(-50%);
 }
-.hero__name {
+.image_description {
     margin: 0 71px 30px 0;
-    font-family: OpenSans;
-    font-size: 30px;
+    font-size: 12px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -141,72 +121,4 @@
     letter-spacing: 0.67px;
     color: #3b3e3f;
     text-align: left;
-}
-
-.hero__info > ul {
-    padding: 0;
-    margin: 0;
-}
-.hero__info > ul > li {
-    text-align: left;
-    list-style-type: none;
-    font-family: OpenSans;
-    font-size: 12px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.17;
-    letter-spacing: 0.8px;
-    color: #3b3e3f;
-    padding-top: 10px;
-}
-
-.hero__info > ul > li > span {
-    font-family: OpenSans;
-    font-size: 14px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: 0.31px;
-    color: #3b3e3f;
-    padding-left: 10px;
-}
-
-.hero__powerstats {
-    display: flex;
-    flex-direction: row;
-    flex: 2;
-    margin-top: 40px;
-    justify-content: space-between;
-}
-
-.hero__powerstats > div > ul {
-    padding: 0;
-    margin: 0;
-}
-.hero__powerstats > div > ul > li {
-    text-align: left;
-    list-style-type: none;
-    font-family: OpenSans;
-    font-size: 12px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.17;
-    letter-spacing: 0.8px;
-    color: #3b3e3f;
-    padding-top: 10px;
-}
-
-.hero__powerstats > div > ul > li > span {
-    font-family: OpenSans;
-    font-size: 14px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: 0.31px;
-    color: #3b3e3f;
-    padding-left: 10px;
 }

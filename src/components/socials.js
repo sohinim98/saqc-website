@@ -3,7 +3,7 @@ import { Facebook, Twitter, Linkedin, Instagram, Mail } from "react-feather"
 import "./socials.css"
 
 const Socials = () => (
-  <div>
+  <div className="socials">
       <a href="https://instagram.com/saqcollective" target="blank" aria-label="instagram link"><Instagram className="social-icon" /></a>
       <a href="https://twitter.com/saqcollective" target="blank" aria-label="twitter link"><Twitter className="social-icon" /></a>
       <a href="https://www.facebook.com/profile.php?id=100088564521799&mibextid=LQQJ4d" target="blank" aria-label="facebook link"><Facebook className="social-icon" /></a>
