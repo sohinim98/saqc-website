@@ -27,6 +27,12 @@
     fill: none;
 }
 /*Audio Player*/
+.audio-title {
+    color: white;
+    font-family: Roboto, Sans-Serif;
+    font-size: 16px;
+    text-align: center;
+}
 @media screen and (min-width:1380px) {
     .audio {
         /*position:absolute;*/
@@ -59,7 +65,7 @@
 .donation-input {
     padding-bottom: 20px;
 }
-.btn-primary {
+.donation-btn {
     background-color: #6c62fe;
     border: none;
     color: white;
@@ -72,7 +78,7 @@
     cursor: pointer;
     border-radius: 12px;
 }
-.btn-primary:hover {
+.donation-btn:hover {
     background-color: #9DA0FE; /* Green */
     color: white;
 }

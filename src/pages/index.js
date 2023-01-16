@@ -9,6 +9,7 @@ import Confetti from 'react-confetti'
 import Piya from "../assets/piya-tose-naina-lage-re.mp3";
 import Socials from "../components/socials";
 import ImageSwapper from "../components/imageSwapper";
+import SecondaryHeader from "../components/secondary-header";
 
 const App = ({location}) => {
     const [donationMessage, setDonationMessage] = useState("");
@@ -50,12 +51,13 @@ const App = ({location}) => {
             </ul>
             <section className="tools">
                 <div className="audio">
-                    <p>track of the month खास आपके लिए</p>
+                    <p className="audio-title">track of the month खास आपके लिए</p>
                     <audio id="player" controls autoPlay loop>
                         <source src={Piya} type="audio/mp3"/>
                         Your browser does not support the audio element.
                     </audio>
                 </div>
+                <SecondaryHeader/>
                 {donationMessage ? donationMessage:
                     <form action="/api/@raae/gatsby-plugin-donations/donation" method="POST">
                         <fieldset className="donation">
@@ -68,7 +70,7 @@ const App = ({location}) => {
                                 <input type="number" id="amount" name="amount" defaultValue="10" />
                             </p>
                             <p>
-                                <button className="btn-primary">Donate</button>
+                                <button className="donation-btn">Donate</button>
                             </p>
                         </fieldset>
                     </form>}
