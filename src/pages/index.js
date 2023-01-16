@@ -48,13 +48,31 @@ const App = ({location}) => {
                     </Link>
                 </li>
             </ul>
-            <div className="audio">
-                <p>track of the month खास आपके लिए</p>
-                <audio id="player" controls autoPlay loop>
-                    <source src={Piya} type="audio/mp3"/>
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
+            <section className="tools">
+                <div className="audio">
+                    <p>track of the month खास आपके लिए</p>
+                    <audio id="player" controls autoPlay loop>
+                        <source src={Piya} type="audio/mp3"/>
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                {donationMessage ? donationMessage:
+                    <form action="/api/@raae/gatsby-plugin-donations/donation" method="POST">
+                        <fieldset className="donation">
+                            <p>
+                                Support our artists and the cause by donating if you can! 💘
+                            </p>
+                            <p>
+                                <label htmlFor="amount" className="donation-input">Amount 💰 (in CAD)</label>
+                                <br />
+                                <input type="number" id="amount" name="amount" defaultValue="10" />
+                            </p>
+                            <p>
+                                <button className="btn-primary">Donate</button>
+                            </p>
+                        </fieldset>
+                    </form>}
+            </section>
             <ImageSwapper/>
             <section className="message-of-the-month">
                 <p>
@@ -65,19 +83,6 @@ const App = ({location}) => {
                 </p>
             </section>
             <Slider />
-            {donationMessage ? donationMessage:
-                <form action="/api/@raae/gatsby-plugin-donations/donation" method="POST">
-                <fieldset>
-                    <p>
-                        <label htmlFor="amount">Amount: </label>
-                        <br />
-                        <input type="number" id="amount" name="amount" defaultValue="10" />
-                    </p>
-                    <p>
-                        <button>Donate</button>
-                    </p>
-                </fieldset>
-            </form>}
             <section>
                 <Socials/>
                 <footer

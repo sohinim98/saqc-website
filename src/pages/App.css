@@ -44,6 +44,38 @@
     margin: auto;
     z-index: 2;
 }
+.tools {
+    display:flex;
+    width: 95%;
+    justify-content: space-between;
+    padding-left: 2%;
+}
+.donation {
+    border: none;
+    color: white;
+    font-family: Roboto, Sans-Serif;
+    font-size: 16px;
+}
+.donation-input {
+    padding-bottom: 20px;
+}
+.btn-primary {
+    background-color: #6c62fe;
+    border: none;
+    color: white;
+    padding: 12px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.btn-primary:hover {
+    background-color: #9DA0FE; /* Green */
+    color: white;
+}
 /*Team Page Styles Begin*/
 .team-cover {
     height: 90vh;
