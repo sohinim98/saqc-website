@@ -86,6 +86,19 @@ const App = ({location}) => {
                 </p>
             </section>
             <Slider />
+            <div className="video-interview-container">
+                <iframe
+                    src="https://player.vimeo.com/video/789931229?h=9a5dc0b0a5&amp"
+                    title="video interview"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    frameBorder="0"
+                    webkitallowfullscreen="true"
+                    mozallowfullscreen="true"
+                    allowFullScreen
+                    className="video-interview"
+                />
+            </div>
+
             <section>
                 <InstagramFeed/>
                 <Socials/>

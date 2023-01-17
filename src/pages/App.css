@@ -82,6 +82,18 @@
     background-color: #9DA0FE; /* Green */
     color: white;
 }
+.video-interview-container {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+}
+.video-interview {
+    max-height: 100%;
+    max-width: 100%;
+    width: 1000px;
+    height: 1000px;
+}
 /*Team Page Styles Begin*/
 .team-cover {
     height: 90vh;
