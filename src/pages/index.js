@@ -10,6 +10,7 @@ import Piya from "../assets/piya-tose-naina-lage-re.mp3";
 import Socials from "../components/socials";
 import ImageSwapper from "../components/imageSwapper";
 import SecondaryHeader from "../components/secondary-header";
+import InstagramFeed from "../components/instagramFeed";
 
 const App = ({location}) => {
     const [donationMessage, setDonationMessage] = useState("");
@@ -33,7 +34,7 @@ const App = ({location}) => {
                 width={width}
                 height={height}
             /> : ""}
-            <ul className="nav-bar">
+            <ul className="nav-bar" id="nav-bar">
                 <li>
                     <Link to="/">
                         <Image
@@ -86,6 +87,7 @@ const App = ({location}) => {
             </section>
             <Slider />
             <section>
+                <InstagramFeed/>
                 <Socials/>
                 <footer
                     style={{
