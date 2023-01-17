@@ -1,5 +1,7 @@
 .instagram-grid {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     min-height: 100px;
     width: 100%;
     margin: auto;
@@ -21,4 +23,9 @@
     height: 250px;
     width: 250px;
     margin: 5px;
+}
+@media (min-width:1024px)  {
+    .instagram-grid {
+        flex-direction: row;
+    }
 }

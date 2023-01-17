@@ -8,7 +8,7 @@ import Socials from "../components/socials";
 const Team = () => {
     return (
         <div className="background">
-            <ul className="nav-bar">
+            <ul className="nav-bar" id="nav-bar">
                 <li>
                     <Link to="/">
                         <Image
@@ -30,11 +30,6 @@ const Team = () => {
                 alt="team's cover photo"
             />
             <section className="team">
-                <Image
-                    className="team-cover"
-                    src="Sohini.jpg"
-                    alt="Sohini"
-                />
                 <div className="team-card">
                     <Image
                         className="team-photo"

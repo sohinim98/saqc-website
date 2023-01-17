@@ -45,7 +45,7 @@ const Contact = () => {
               </button>
             </div>
             {serverState.status && (
-              <p className={!serverState.status.ok ? "errorMsg" : ""}>
+              <p className={!serverState.status.ok ? "errorMsg" : "sign-up-success"}>
                 {serverState.status.msg}
               </p>
             )}

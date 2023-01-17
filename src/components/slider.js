@@ -9,7 +9,7 @@ const Slider = () => {
         return (
             <div className="image_wrapper">
                 <a href={images[index]} target="_blank" rel="noopener noreferrer">
-                    <img className="carouse_img" src={images[index]} alt="Photo Project" />
+                    <img className="carousel_img" src={images[index]} alt="Monthly Project" />
                 </a>
                 <p className="mask image_description">
                     GR's mock caption to be replaced with original.

@@ -22,6 +22,17 @@
     width: 200px;
     border-left: 2px solid white;
 }
+.sign-up-success, .errorMsg {
+    font-family: Roboto, Sans-Serif;
+    font-size: 16px;
+    text-align: center;
+}
+.sign-up-success {
+    color: white;
+}
+.errorMsg {
+    color: red;
+}
 .btn-primary {
     background: #6c62fe !important;
     border-radius: 5px 32px 32px 5px !important;

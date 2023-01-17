@@ -53,13 +53,13 @@ const App = ({location}) => {
             <section className="tools">
                 <div className="audio">
                     <p className="audio-title">track of the month खास आपके लिए</p>
-                    <audio id="player" controls autoPlay loop>
+                    <audio id="player" className="audio-player" controls autoPlay loop>
                         <source src={Piya} type="audio/mp3"/>
                         Your browser does not support the audio element.
                     </audio>
                 </div>
                 <SecondaryHeader/>
-                {donationMessage ? donationMessage:
+                {donationMessage ? <p className="donation-success">{donationMessage}</p>:
                     <form action="/api/@raae/gatsby-plugin-donations/donation" method="POST">
                         <fieldset className="donation">
                             <p>
