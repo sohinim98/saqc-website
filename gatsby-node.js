@@ -50,7 +50,7 @@ exports.sourceNodes = async ({ actions }) => {
 
     // Download data from a remote API.
     const igResponse = await fetch(
-        `https://graph.instagram.com/me/media?fields=${fields}&access_token=IGQVJVUDdScTNoMnc2TElqQlF4ZA0R5S0hjQzE3alVuamp2ZA1puOHRxeWlaMTdRMmw3aWtCQUdVQ1pUV1A4Qk1oMGJyNU51RXgwRk4wU2NSWHZAiSzJDQlotNUVNb3NyLTNMRlV2NzlSQWJoRS16SlBjawZDZD`
+        `https://graph.instagram.com/me/media?fields=${fields}&access_token=${process.env.IG_ACCESS_TOKEN}`
     )
 
     const { data } = await igResponse.json()
