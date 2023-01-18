@@ -4,7 +4,11 @@ import "./slider.css";
 
 const Slider = () => {
 
-    const images = ["https://i.imgur.com/B8FTp6t.jpeg", "https://i.imgur.com/B8FTp6t.jpeg"];
+    const images = ["https://i.imgur.com/EaJCoCM.jpeg", "https://i.imgur.com/W8f4gVi.jpeg",
+        "https://i.imgur.com/zqDW61X.jpeg", "https://i.imgur.com/asD46pt.jpeg", "https://i.imgur.com/nVmsliA.jpeg",
+    "https://i.imgur.com/giTl4bk.jpeg", "https://i.imgur.com/cvzN7eB.jpeg", "https://i.imgur.com/9foXsc1.jpeg",
+    "https://i.imgur.com/CXv4X9v.jpeg", "https://i.imgur.com/543JiOE.jpeg", "https://i.imgur.com/JQ5HgwH.jpeg",
+        "https://i.imgur.com/9fRkpJh.jpeg", "https://i.imgur.com/Uc1jLjc.jpeg"];
     const slides = images.map((image, index) => {
         return (
             <div className="image_wrapper">
