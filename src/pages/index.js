@@ -10,7 +10,6 @@ import Kabhi from "../assets/kabhi-aar-kabhi-paar.mp3";
 import Socials from "../components/socials";
 import ImageSwapper from "../components/imageSwapper";
 import SecondaryHeader from "../components/secondary-header";
-import InstagramFeed from "../components/instagramFeed";
 import Slider2 from "../components/slider2";
 import Slider3 from "../components/slider3";
 import Slider4 from "../components/slider4";
@@ -145,7 +144,6 @@ const App = ({location}) => {
             </div>
 
             <section>
-                <InstagramFeed/>
                 <Socials/>
                 <footer
                     style={{
