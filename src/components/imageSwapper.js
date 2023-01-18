@@ -5,7 +5,8 @@ import "./imageSwapper.css"
 
 const ImageSwapper = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const images = ['gr1.jpg', 'gr2.jpg'];
+    const images = ['gr1.jpg', 'asb1.jpg', 'whabh3.jpg', 'btgb1.jpg', 'gr2.jpg', 'asb14.jpg',
+        'whabh13.jpg', 'btgb4.jpg', 'gr3.jpg', 'asb2.jpg', 'whabh22.jpg', 'btgb15.jpg'];
 
     useEffect(() => {
         const intervalId = setInterval(() => {

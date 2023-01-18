@@ -3,7 +3,7 @@ import { SWRConfig } from "swr";
 import Image from "../../../components/image";
 import "./main-header.css"
 import Piya from "../../../assets/piya-tose-naina-lage-re.mp3"
-import Slider from "../../../components/slider"
+import Slider from "../../../components/slider1"
 
 const MainHeader = ({ text }) => (
   <div style={{height: "100%"}} className="main-header">

@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import "./App.css";
-import Slider from "../components/slider";
+import Slider1 from "../components/slider1";
 import Image from "../components/image";
 import { Link } from "gatsby"
 import {Users} from 'react-feather';
 import useWindowSize from 'react-use/lib/useWindowSize'
 import Confetti from 'react-confetti'
-import Piya from "../assets/piya-tose-naina-lage-re.mp3";
+import Kabhi from "../assets/kabhi-aar-kabhi-paar.mp3";
 import Socials from "../components/socials";
 import ImageSwapper from "../components/imageSwapper";
 import SecondaryHeader from "../components/secondary-header";
 import InstagramFeed from "../components/instagramFeed";
+import Slider2 from "../components/slider2";
+import Slider3 from "../components/slider3";
+import Slider4 from "../components/slider4";
 
 const App = ({location}) => {
     const [donationMessage, setDonationMessage] = useState("");
@@ -54,7 +57,7 @@ const App = ({location}) => {
                 <div className="audio">
                     <p className="audio-title">track of the month खास आपके लिए</p>
                     <audio id="player" className="audio-player" controls autoPlay loop>
-                        <source src={Piya} type="audio/mp3"/>
+                        <source src={Kabhi} type="audio/mp3"/>
                         Your browser does not support the audio element.
                     </audio>
                 </div>
@@ -78,17 +81,59 @@ const App = ({location}) => {
             </section>
             <ImageSwapper/>
             <section className="message-of-the-month">
+                <h1 className="message-of-the-month--title">Release 1: Book Club Apsaras</h1>
                 <p>
-                    Gummi bears bear claw halvah cotton candy apple pie caramels brownie sweet roll. Macaroon donut marshmallow gummi bears macaroon. Croissant pudding sweet roll brownie candy canes fruitcake dessert. Caramels chocolate jelly cheesecake bonbon bonbon. Chocolate donut tart cupcake cake. Cake tart gingerbread wafer muffin. Tootsie roll cotton candy pastry donut pudding icing jelly beans apple pie. Lollipop muffin jujubes halvah icing chupa chups marshmallow macaroon chupa chups. Jelly beans donut oat cake candy lemon drops dessert. Cheesecake lollipop pudding jelly beans croissant gingerbread lollipop chocolate. Bonbon cheesecake pie brownie muffin wafer shortbread bear claw. Shortbread marshmallow dessert biscuit dessert halvah. Bonbon marshmallow toffee jelly beans gummi bears marzipan jelly brownie. Tootsie roll cotton candy lollipop chocolate bar donut pastry.
+                    For our first-ever release, we wanted to recreate scenes from books that have left a profound impact on us.
+                    We examined Maan and Firoz's queerplatonic friendship in <em>A Suitable Boy by Vikram Seth</em>,
+                    David and Giovanni's hot and cold relationship in the quintessential book <em>Giovanni's Room by James Baldwin</em>,
+                    <em> Samra Habib's We Have Always Been Here: A Queer Muslim Memoir</em> — a story about immigrants and
+                    <em> Alok Vaid-Menon's Beyond the Gender Binary</em>. Our primary focus has been on rewriting the narrative.
+                    Here, we have attempted to amplify the voices of queer South Asian people which are often silenced by
+                    white, cis-heteronormative stories within the mainstream. We want our community to feel seen.
+                    <em> Representation is important.</em>
                 </p>
                 <p>
-                    Bonbon macaroon danish tiramisu tart marshmallow tiramisu cotton candy. Sesame snaps pastry bear claw cookie chocolate cake jelly beans icing. Toffee muffin tart cake sesame snaps tart tart chocolate cake sweet roll. Lollipop cheesecake marshmallow chupa chups candy canes. Dessert jelly toffee gummies sweet roll pie. Biscuit tiramisu marzipan caramels carrot cake cake. Topping muffin fruitcake candy canes croissant cake liquorice gummies carrot cake. Marshmallow sweet oat cake ice cream ice cream lemon drops cupcake jelly beans candy. Apple pie gummies lollipop chupa chups bonbon. Jelly-o bear claw bonbon carrot cake cheesecake lollipop marzipan chupa chups. Gummi bears carrot cake gingerbread oat cake pie. Danish cotton candy jelly gummies bear claw. Biscuit wafer gingerbread caramels pie.
+                    A lot of hard work has gone into bringing our first release to life. Special thanks to
+                    Zelina for photographing and interviewing our community, Sohini for bringing our ideas to life
+                    and Shradha for their creative styling! We appreciate and thank you for your support. This would have
+                    been impossible without the involvement of the Toronto artists you see on-screen and folks who helped
+                    us behind the scenes. Cheers and शुक्रिया! ✨
                 </p>
             </section>
-            <Slider />
+            <Slider1 />
+            <Slider3 />
+            <section className="designer-text-box">
+                <p className="text-large">
+                    “With everything in me screaming No! yet the sum of me sighed Yes.”
+                </p>
+                <p className="text-small align-bottom">
+                    “You don’t have a home until you leave it and then, when you have left it, you never can go back.” — James Baldwin
+                </p>
+            </section>
+            <Slider1 />
+            <section className="designer-text-box">
+                <p className="text-small align-center">
+                    "Not everyone is equipped for activism in the traditional sense—marching, writing letters to officials—but dedicating your life to understanding yourself can be its own form of protest, especially when the world tells you that you don't exist.”
+                    ― Samra Habib, We Have Always Been Here: A Queer Muslim Memoir
+                </p>
+                <p className="text-large">
+                    “Representation is a critical way for people to recognize that their experiences—even if invisible in the mainstream—are valid.”
+                </p>
+            </section>
+            <Slider4 />
+            <section className="designer-text-box">
+                <p className="text-large">
+                    “What’s never questioned here is, whose standards of authenticity are we being held up to in the first place?”
+                </p>
+                <p className="text-small align-bottom">
+                    “It’s not just that you internalize the shame; rather, it becomes you. You no longer need the people at school telling you not to dress like that; you already do it to yourself.”
+                    ― Alok Vaid-Menon, Beyond the Gender Binary
+                </p>
+            </section>
+            <Slider2 />
             <div className="video-interview-container">
                 <iframe
-                    src="https://player.vimeo.com/video/789931229?h=9a5dc0b0a5&amp"
+                    src="https://player.vimeo.com/video/110527266?h=64b18d4462&amp"
                     title="video interview"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     frameBorder="0"

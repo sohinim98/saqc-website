@@ -26,6 +26,29 @@
     stroke-linejoin: round;
     fill: none;
 }
+.designer-text-box {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #454543;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, Sans-Serif;
+    justify-content: space-around;
+    width: 100%;
+}
+.text-large {
+    font-size: 36px;
+    max-width:35%;
+}
+.text-small {
+    font-size: 20px;
+    max-width:35%;
+}
+.align-bottom {
+    align-self: flex-end;
+}
+.align-center {
+    align-self: center;
+}
 /*Audio Player*/
 .audio-title {
     color: white;
@@ -52,6 +75,10 @@
     padding: 20px;
     margin: auto;
     z-index: 2;
+}
+.message-of-the-month--title {
+    font-size: 36px;
+    text-align: center;
 }
 .tools {
     display:flex;
@@ -126,7 +153,7 @@
     max-width: 350px;
 }
 @media (min-width:1024px)  {
-    .team, .tools {
+    .team, .tools, .designer-text-box {
         flex-direction: row;
     }
     .message-of-the-month {

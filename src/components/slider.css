@@ -117,10 +117,10 @@
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
-    line-height: 0.7;
+    line-height: 0.8;
     letter-spacing: 0.67px;
     color: #3b3e3f;
-    text-align: left;
+    text-align: center;
 }
 @media (min-width:1024px)  {
     .carousel_img {
@@ -128,7 +128,7 @@
         height: 1000px;
     }
     .react-3d-carousel .slider-container {
-        height: 1000px;
+        height: 1020px;
     }
 }
 
