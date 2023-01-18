@@ -8,8 +8,7 @@ const Slider4 = () => {
     "https://i.imgur.com/5sdsAmR.jpeg", "https://i.imgur.com/1iqULG9.jpeg", "https://i.imgur.com/9ydjst3.jpeg",
     "https://i.imgur.com/S593Z13.jpeg", "https://i.imgur.com/kOZcF9d.jpeg", "https://i.imgur.com/TdRsUQd.jpeg",
     "https://i.imgur.com/S7r2X08.jpeg", "https://i.imgur.com/npU5dC0.jpeg", "https://i.imgur.com/NR3eKTa.jpeg",
-    "https://i.imgur.com/Y47VDI4.jpeg", "https://i.imgur.com/X8MfG8H.jpeg", "https://i.imgur.com/njXsfBN.jpeg",
-    "https://i.imgur.com/wFZO0VK.jpeg", "https://i.imgur.com/ejTxwR6.jpeg"];
+    "https://i.imgur.com/Y47VDI4.jpeg", "https://i.imgur.com/X8MfG8H.jpeg", "https://i.imgur.com/njXsfBN.jpeg", "https://i.imgur.com/ejTxwR6.jpeg"];
     const slides = images.map((image, index) => {
         return (
             <div className="image_wrapper">

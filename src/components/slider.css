@@ -25,9 +25,9 @@
 .react-3d-carousel .slider-container .slider-left > div,
 .react-3d-carousel .slider-container .slider-right > div {
     box-shadow: 0 2px 8px 0 rgba(9, 55, 69, 0.25);
-    border: solid 1px #1ebfff;
+    border: solid 1px #6c62fe;
     border-radius: 50%;
-    background-image: linear-gradient(172deg, #00a1d2 11%, #03bbf3 122%);
+    background-image: linear-gradient(172deg, #6c62fe 11%, #03bbf3 122%);
     width: 27px;
     height: 27px;
     display: flex;
@@ -63,7 +63,7 @@
     right: 10px;
     background-image: linear-gradient(
             to bottom left,
-            #2cc4ad 50%,
+            #6c62fe 50%,
             transparent 50%
     );
 }
@@ -91,7 +91,6 @@
 
 .carousel_img {
     width: 388px;
-    height: 553px;
     margin: 5px 5px 0;
     padding: 0 0;
 }

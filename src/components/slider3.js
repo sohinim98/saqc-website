@@ -16,7 +16,7 @@ const Slider3 = () => {
                     <img className="carousel_img" src={images[index]} alt="Monthly Project" />
                 </a>
                 <p className="mask image_description">
-                    Recreating A Suitable Boy by Vikram Seth (1993)
+                    Recreating Maan and Firoz in A Suitable Boy by Vikram Seth (1993)
                 </p>
             </div>
         )});

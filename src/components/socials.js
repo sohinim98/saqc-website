@@ -5,7 +5,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Socials = () => (
     <div className="socials-container">
-        <button className="link-button" onClick={() => scrollTo('#nav-bar')}><ArrowUp className="social-icon" /></button>
+        <button alt="button to go up" className="link-button" onClick={() => scrollTo('#nav-bar')}><ArrowUp className="social-icon" /></button>
           <div className="socials">
                 <a href="https://instagram.com/saqcollective" target="blank" aria-label="instagram link"><Instagram className="social-icon" /></a>
                 <a href="https://twitter.com/saqcollective" target="blank" aria-label="twitter link"><Twitter className="social-icon" /></a>
