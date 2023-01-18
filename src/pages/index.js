@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import "./App.css";
-import Slider1 from "../components/slider1";
 import Image from "../components/image";
+import { v4 as uuidv4 } from "uuid";
 import { Link } from "gatsby"
 import {Users} from 'react-feather';
 import useWindowSize from 'react-use/lib/useWindowSize'
@@ -10,13 +10,33 @@ import Kabhi from "../assets/kabhi-aar-kabhi-paar.mp3";
 import Socials from "../components/socials";
 import ImageSwapper from "../components/imageSwapper";
 import SecondaryHeader from "../components/secondary-header";
-import Slider2 from "../components/slider2";
-import Slider3 from "../components/slider3";
-import Slider4 from "../components/slider4";
+import Card from "../components/card";
+import ImageCarousel from "../components/image-carousel";
 
 const App = ({location}) => {
     const [donationMessage, setDonationMessage] = useState("");
     const { width, height } = useWindowSize();
+
+    const asb_images = ["https://i.imgur.com/jzgn6lC.jpeg", "https://i.imgur.com/CmWhzVt.jpeg", "https://i.imgur.com/AlBoJT9.jpeg",
+    "https://i.imgur.com/IC40og6.jpeg", "https://i.imgur.com/eFjpcMx.jpeg", "https://i.imgur.com/qPogedX.jpeg",
+    "https://i.imgur.com/kqmLpPG.jpeg", "https://i.imgur.com/54rOUd6.jpeg", "https://i.imgur.com/16e4Suc.jpeg",
+    "https://i.imgur.com/PJvuEPk.jpeg", "https://i.imgur.com/CmKbyzm.jpeg", "https://i.imgur.com/Mp8ead0.jpeg",
+    "https://i.imgur.com/OhXaKej.jpeg"];
+    const gr_images = ["https://i.imgur.com/EaJCoCM.jpeg", "https://i.imgur.com/W8f4gVi.jpeg",
+        "https://i.imgur.com/zqDW61X.jpeg", "https://i.imgur.com/asD46pt.jpeg", "https://i.imgur.com/nVmsliA.jpeg",
+        "https://i.imgur.com/giTl4bk.jpeg", "https://i.imgur.com/cvzN7eB.jpeg", "https://i.imgur.com/9foXsc1.jpeg",
+        "https://i.imgur.com/CXv4X9v.jpeg", "https://i.imgur.com/543JiOE.jpeg", "https://i.imgur.com/JQ5HgwH.jpeg",
+        "https://i.imgur.com/9fRkpJh.jpeg", "https://i.imgur.com/Uc1jLjc.jpeg"];
+
+    const whabh_images = ["https://i.imgur.com/ExyZ8qf.jpeg", "https://i.imgur.com/0BfgEe6.jpeg", "https://i.imgur.com/qTQ9TAj.jpeg", "https://i.imgur.com/9E3yNBu.jpeg", "https://i.imgur.com/0d9bXXz.jpeg",
+    "https://i.imgur.com/5sdsAmR.jpeg", "https://i.imgur.com/1iqULG9.jpeg", "https://i.imgur.com/9ydjst3.jpeg",
+    "https://i.imgur.com/S593Z13.jpeg", "https://i.imgur.com/kOZcF9d.jpeg", "https://i.imgur.com/TdRsUQd.jpeg",
+    "https://i.imgur.com/S7r2X08.jpeg", "https://i.imgur.com/npU5dC0.jpeg", "https://i.imgur.com/NR3eKTa.jpeg",
+    "https://i.imgur.com/Y47VDI4.jpeg", "https://i.imgur.com/X8MfG8H.jpeg", "https://i.imgur.com/njXsfBN.jpeg", "https://i.imgur.com/ejTxwR6.jpeg"];
+
+    const btgb_images = ["https://i.imgur.com/4cpYzaa.jpeg", "https://i.imgur.com/yFj694L.jpeg","https://i.imgur.com/VZwQyy2.jpeg",
+        "https://i.imgur.com/wohCk3L.jpeg", "https://i.imgur.com/lCyRPBV.jpeg", "https://i.imgur.com/LSqlBBB.jpeg",
+        "https://i.imgur.com/71H3AL0.jpeg", "https://i.imgur.com/vmU3Ubg.jpeg", "https://i.imgur.com/86MLJFe.jpeg", "https://i.imgur.com/nZLeIwM.jpeg"];
 
     useEffect(()=> {
         // Check to see if this is a redirect back from Checkout
@@ -28,6 +48,43 @@ const App = ({location}) => {
             setDonationMessage("Donation cancelled — try again when you're ready")
         }
     }, [location.search]);
+
+    const asb_cards = asb_images.map((card_image) => {
+        return (
+            {
+                key: uuidv4(),
+                content: (
+                    <Card images={card_image} caption={"Recreating Maan and Firoz in A Suitable Boy by Vikram Seth (1993)"}/>
+                )
+            }
+        )})
+    const gr_cards = gr_images.map((card_image) => {
+        return (
+            {
+                key: uuidv4(),
+                content: (
+                    <Card images={card_image} caption="Recreating Giovanni's Room by James Baldwin (1956)"/>
+                )
+            }
+        )});
+    const whabh_cards = whabh_images.map((card_image) => {
+        return (
+            {
+                key: uuidv4(),
+                content: (
+                    <Card images={card_image} caption="Recreating We Have Always Been Here: A Queer Muslim Memoir by Samra Habib (2019)"/>
+                )
+            }
+        )});
+    const btgb_cards = btgb_images.map((card_image) => {
+        return (
+            {
+                key: uuidv4(),
+                content: (
+                    <Card images={card_image} caption="Recreating Beyond the Gender Binary by Alok Vaid-Menon (2020)"/>
+                )
+            }
+        )});
 
     return (
         <div className="App background">
@@ -99,8 +156,12 @@ const App = ({location}) => {
                     us behind the scenes. Cheers and शुक्रिया! ✨
                 </p>
             </section>
-            <Slider1 />
-            <Slider3 />
+            <ImageCarousel
+                images={asb_cards}
+                height="900px"
+                width="30%"
+                margin="10% auto"
+            />
             <section className="designer-text-box">
                 <p className="text-large">
                     “With everything in me screaming No! yet the sum of me sighed Yes.”
@@ -109,7 +170,12 @@ const App = ({location}) => {
                     “You don’t have a home until you leave it and then, when you have left it, you never can go back.” — James Baldwin
                 </p>
             </section>
-            <Slider1 />
+            <ImageCarousel
+                images={gr_cards}
+                height="900px"
+                width="30%"
+                margin="10% auto"
+            />
             <section className="designer-text-box">
                 <p className="text-small align-center">
                     "Not everyone is equipped for activism in the traditional sense—marching, writing letters to officials—but dedicating your life to understanding yourself can be its own form of protest, especially when the world tells you that you don't exist.”
@@ -119,7 +185,12 @@ const App = ({location}) => {
                     “Representation is a critical way for people to recognize that their experiences—even if invisible in the mainstream—are valid.”
                 </p>
             </section>
-            <Slider4 />
+            <ImageCarousel
+                images={whabh_cards}
+                height="900px"
+                width="30%"
+                margin="10% auto"
+            />
             <section className="designer-text-box">
                 <p className="text-large">
                     “What’s never questioned here is, whose standards of authenticity are we being held up to in the first place?”
@@ -129,7 +200,12 @@ const App = ({location}) => {
                     ― Alok Vaid-Menon, Beyond the Gender Binary
                 </p>
             </section>
-            <Slider2 />
+            <ImageCarousel
+                images={btgb_cards}
+                height="900px"
+                width="30%"
+                margin="10% auto"
+            />
             <div className="video-interview-container">
                 <iframe
                     src="https://player.vimeo.com/video/110527266?h=64b18d4462&amp"
