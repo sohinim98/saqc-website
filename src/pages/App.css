@@ -2,9 +2,9 @@
 }
 .background {
     /*note: commented out styles can cause scrolling issues*/
-    position: absolute;
-    /*width: 100vw;*/
-    /*max-width: 100%;*/
+    /*position: absolute;*/
+    width: 100vw;
+    max-width: 100%;
     min-height: 100vh;
     background: radial-gradient(ellipse at center, #4248ee 0%, #080b5b 100%);
 }

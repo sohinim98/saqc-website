@@ -29,11 +29,13 @@ const App = ({location}) => {
         "https://i.imgur.com/CXv4X9v.jpeg", "https://i.imgur.com/543JiOE.jpeg", "https://i.imgur.com/JQ5HgwH.jpeg",
         "https://i.imgur.com/9fRkpJh.jpeg", "https://i.imgur.com/Uc1jLjc.jpeg"];
 
-    const whabh_images = ["https://i.imgur.com/ExyZ8qf.jpeg", "https://i.imgur.com/0BfgEe6.jpeg", "https://i.imgur.com/qTQ9TAj.jpeg", "https://i.imgur.com/9E3yNBu.jpeg", "https://i.imgur.com/0d9bXXz.jpeg",
-    "https://i.imgur.com/5sdsAmR.jpeg", "https://i.imgur.com/1iqULG9.jpeg", "https://i.imgur.com/9ydjst3.jpeg",
-    "https://i.imgur.com/S593Z13.jpeg", "https://i.imgur.com/kOZcF9d.jpeg", "https://i.imgur.com/TdRsUQd.jpeg",
-    "https://i.imgur.com/S7r2X08.jpeg", "https://i.imgur.com/npU5dC0.jpeg", "https://i.imgur.com/NR3eKTa.jpeg",
-    "https://i.imgur.com/Y47VDI4.jpeg", "https://i.imgur.com/X8MfG8H.jpeg", "https://i.imgur.com/njXsfBN.jpeg", "https://i.imgur.com/ejTxwR6.jpeg"];
+    const whabh_images = ["https://i.imgur.com/ExyZ8qf.jpeg", "https://i.imgur.com/0BfgEe6.jpeg", "https://i.imgur.com/qTQ9TAj.jpeg",
+        "https://i.imgur.com/9E3yNBu.jpeg", "https://i.imgur.com/0d9bXXz.jpeg", "https://i.imgur.com/5sdsAmR.jpeg",
+        "https://i.imgur.com/1iqULG9.jpeg", "https://i.imgur.com/9ydjst3.jpeg", "https://i.imgur.com/S593Z13.jpeg",
+        "https://i.imgur.com/kOZcF9d.jpeg", "https://i.imgur.com/TdRsUQd.jpeg", "https://i.imgur.com/dl4ZFla.jpeg",
+        "https://i.imgur.com/LOGESr2.jpeg", "https://i.imgur.com/Y47VDI4.jpeg", "https://i.imgur.com/NR3eKTa.jpeg",
+        "https://i.imgur.com/cLk12Wl.jpeg", "https://i.imgur.com/X8MfG8H.jpeg", "https://i.imgur.com/njXsfBN.jpeg",
+        "https://i.imgur.com/wFZO0VK.jpeg", "https://i.imgur.com/ejTxwR6.jpeg"];
 
     const btgb_images = ["https://i.imgur.com/4cpYzaa.jpeg", "https://i.imgur.com/yFj694L.jpeg","https://i.imgur.com/VZwQyy2.jpeg",
         "https://i.imgur.com/wohCk3L.jpeg", "https://i.imgur.com/lCyRPBV.jpeg", "https://i.imgur.com/LSqlBBB.jpeg",
