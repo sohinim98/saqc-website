@@ -1,6 +1,7 @@
-import Carousel from "react-spring-3d-carousel";
+import loadable from "@loadable/component";
 import React, { useState } from "react";
 import { config } from "react-spring";
+const Carousel = loadable(() => import("react-spring-3d-carousel"));
 
 const ImageCarousel = ({images, height, width, margin}) =>  {
     const table = images.map((element, index) => {
