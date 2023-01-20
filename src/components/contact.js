@@ -2,7 +2,7 @@ import React, { useState }  from "react"
 import axios from "axios";
 import "./contact.css"
 
-const MyForm = () => {
+const Contact = () => {
 
   const [serverState, setServerState] = useState({
     submitting: false,
@@ -45,7 +45,7 @@ const MyForm = () => {
               </button>
             </div>
             {serverState.status && (
-              <p className={!serverState.status.ok ? "errorMsg" : ""}>
+              <p className={!serverState.status.ok ? "errorMsg" : "sign-up-success"}>
                 {serverState.status.msg}
               </p>
             )}
@@ -55,4 +55,4 @@ const MyForm = () => {
   );
 };
 
-export default MyForm;
+export default Contact;

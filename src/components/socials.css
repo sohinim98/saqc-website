@@ -1,3 +1,14 @@
+.socials-container {
+    display: flex;
+    justify-content: space-around;
+}
+.socials {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
 .social-icon {
     width: 40px;
     height: 40px;
@@ -8,3 +19,10 @@
     fill: none;
     padding: 5px;
 }
+.link-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+

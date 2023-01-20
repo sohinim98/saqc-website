@@ -1,0 +1,133 @@
+.react-3d-carousel
+.slider-container
+.slider-content
+.slider-single
+.slider-single-content {
+    box-shadow: none;
+}
+
+.react-3d-carousel .slider-container {
+    width: 100%;
+    margin: -0px auto 0px -50%;
+    overflow: hidden;
+    height: 1000px;
+}
+
+.react-3d-carousel .slider-container .slider-content {
+    width: 100%;
+}
+.react-3d-carousel .slider-container .slider-left {
+    right: 95%;
+}
+.react-3d-carousel .slider-container .slider-right {
+    left: 95%;
+}
+.react-3d-carousel .slider-container .slider-left > div,
+.react-3d-carousel .slider-container .slider-right > div {
+    box-shadow: 0 2px 8px 0 rgba(9, 55, 69, 0.25);
+    border: solid 1px #6c62fe;
+    border-radius: 50%;
+    background-image: linear-gradient(172deg, #6c62fe 11%, #03bbf3 122%);
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-3d-carousel .slider-container .slider-right > div > i {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    background: url("/src/assets/icon-chevron-right.png") no-repeat center center;
+}
+
+.react-3d-carousel .slider-container .slider-left > div > i {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    background: url("/src/assets/icon-chevron-left.png") no-repeat center center;
+}
+
+.rectangle {
+    width: 127px;
+    height: 119px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-top: 10px;
+    padding-right: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-image: linear-gradient(
+            to bottom left,
+            #6c62fe 50%,
+            transparent 50%
+    );
+}
+
+.rectangle > div {
+    font-family: OpenSans;
+    font-size: 11px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.27;
+    letter-spacing: 0.53px;
+    color: #ffffff;
+}
+
+.image_wrapper {
+    position: relative;
+    z-index: 1;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 17px 50px -10px rgba(1, 33, 78, 0.19);
+    border: solid 1px #f1f5fa;
+    background-color: #ffffff;
+}
+
+.carousel_img {
+    width: 388px;
+    margin: 5px 5px 0;
+    padding: 0 0;
+}
+.mask {
+    position: absolute;
+    width: calc(408px - 80px);
+    height: 20px;
+    border-radius: 8px;
+    background-color: rgba(211, 211, 211, 0.7);
+    z-index: 2;
+    bottom: 0;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.image_description {
+    margin: 0 71px 30px 0;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.8;
+    letter-spacing: 0.67px;
+    color: #3b3e3f;
+    text-align: center;
+}
+@media (min-width:1024px)  {
+    .carousel_img {
+        width: 701px;
+        height: 1000px;
+    }
+    .react-3d-carousel .slider-container {
+        height: 1020px;
+    }
+}
+

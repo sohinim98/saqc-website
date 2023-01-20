@@ -1,7 +1,9 @@
 import React from "react";
+import { SWRConfig } from "swr";
 import Image from "../../../components/image";
 import "./main-header.css"
-import Piya from "../../../audio/piya-tose-naina-lage-re.mp3"
+import Piya from "../../../assets/piya-tose-naina-lage-re.mp3"
+import Slider from "../../../components/slider1"
 
 const MainHeader = ({ text }) => (
   <div style={{height: "100%"}} className="main-header">
@@ -38,6 +40,19 @@ const MainHeader = ({ text }) => (
       Come, join us or collaborate!
     </p>
     <p className="main-header--signature">— South Asian Queer Collective</p>
+
+      <SWRConfig
+          value={{
+              refreshInterval: 3000,
+              fetcher: (resource, init) =>
+                  fetch(resource, init).then((res) => res.json()),
+          }}
+      >
+          <div className="App">
+              <header className="App-header">Super Heros</header>
+              <Slider />
+          </div>
+      </SWRConfig>
   </div>
 );
 
