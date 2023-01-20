@@ -1,7 +1,7 @@
 import * as React from "react"
 import {useEffect, useState} from "react";
 import Image from "./image";
-import "./imageSwapper.css"
+import "./image-swapper.css"
 
 const ImageSwapper = () => {
     const [currentIndex, setCurrentIndex] = useState(0);

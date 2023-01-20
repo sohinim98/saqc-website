@@ -8,7 +8,7 @@ import useWindowSize from 'react-use/lib/useWindowSize'
 import Confetti from 'react-confetti'
 import Kabhi from "../assets/kabhi-aar-kabhi-paar.mp3";
 import Socials from "../components/socials";
-import ImageSwapper from "../components/imageSwapper";
+import ImageSwapper from "../components/image-swapper";
 import SecondaryHeader from "../components/secondary-header";
 import Card from "../components/card";
 import ImageCarousel from "../components/image-carousel";
