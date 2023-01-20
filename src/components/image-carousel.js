@@ -13,7 +13,7 @@ const ImageCarousel = ({images, height, width, margin}) =>  {
 
     return (
         <div
-            style={{ width: width, height: height, margin: margin }}
+            style={{ width: width, height: height, margin: margin, cursor: "pointer" }}
         >
             <Carousel
                 slides={cards}
