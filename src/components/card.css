@@ -17,7 +17,7 @@
 
 .mask {
     position: absolute;
-    width: calc(380px - 80px);
+    width: calc(230px - 80px);
     max-width: 100%;
     border-radius: 8px;
     background-color: rgba(211, 211, 211, 0.7);
