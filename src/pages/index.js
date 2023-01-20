@@ -16,6 +16,7 @@ import ImageCarousel from "../components/image-carousel";
 const App = ({location}) => {
     const [donationMessage, setDonationMessage] = useState("");
     const { width, height } = useWindowSize();
+    const isDesktop = width >= 1024;
 
     const asb_images = ["https://i.imgur.com/jzgn6lC.jpeg", "https://i.imgur.com/CmWhzVt.jpeg", "https://i.imgur.com/AlBoJT9.jpeg",
     "https://i.imgur.com/IC40og6.jpeg", "https://i.imgur.com/eFjpcMx.jpeg", "https://i.imgur.com/qPogedX.jpeg",
@@ -158,9 +159,9 @@ const App = ({location}) => {
             </section>
             <ImageCarousel
                 images={asb_cards}
-                height="900px"
+                height={isDesktop?"1000px":"450px"}
                 width="30%"
-                margin="10% auto"
+                margin="auto"
             />
             <section className="designer-text-box">
                 <p className="text-large">
@@ -172,9 +173,9 @@ const App = ({location}) => {
             </section>
             <ImageCarousel
                 images={gr_cards}
-                height="900px"
+                height={isDesktop?"1000px":"450px"}
                 width="30%"
-                margin="10% auto"
+                margin="auto"
             />
             <section className="designer-text-box">
                 <p className="text-small align-center">
@@ -187,9 +188,9 @@ const App = ({location}) => {
             </section>
             <ImageCarousel
                 images={whabh_cards}
-                height="900px"
+                height={isDesktop?"1000px":"450px"}
                 width="30%"
-                margin="10% auto"
+                margin="auto"
             />
             <section className="designer-text-box">
                 <p className="text-large">
@@ -202,9 +203,9 @@ const App = ({location}) => {
             </section>
             <ImageCarousel
                 images={btgb_cards}
-                height="900px"
+                height={isDesktop?"1000px":"450px"}
                 width="30%"
-                margin="10% auto"
+                margin="auto"
             />
             <div className="video-interview-container">
                 <iframe

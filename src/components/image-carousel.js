@@ -18,7 +18,7 @@ const ImageCarousel = ({images, height, width, margin}) =>  {
                 slides={cards}
                 goToSlide={goToSlide}
                 offsetRadius={2}
-                showNavigation={true}
+                showNavigation={false}
                 animationConfig={config.gentle}
             />
         </div>

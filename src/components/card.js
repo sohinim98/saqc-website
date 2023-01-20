@@ -18,10 +18,12 @@ const Card = ({ images, caption }) => {
             onMouseEnter={() => setShown(true)}
             onMouseLeave={() => setShown(false)}
         >
-            <img src={images} alt="Monthly Project" />
-            <section className="mask">
-                <p className="image_description">{caption}</p>
-            </section>
+            <a href={images} target="_blank" rel="noopener noreferrer">
+                <img src={images} alt="Monthly Project" />
+                <section className="mask">
+                    <p className="image_description">{caption}</p>
+                </section>
+            </a>
         </animated.div>
     );
 }
