@@ -37,12 +37,12 @@
     width: 100%;
 }
 .text-large {
-    font-size: 36px;
-    max-width:35%;
+    font-size: 24px;
+    max-width:50%;
 }
 .text-small {
-    font-size: 20px;
-    max-width:35%;
+    font-size: 18px;
+    max-width:50%;
 }
 .align-bottom {
     align-self: flex-end;
@@ -170,6 +170,14 @@
     }
     .team-cover {
         height: 90vh;
+    }
+    .text-large {
+        font-size: 36px;
+        max-width:35%;
+    }
+    .text-small {
+        font-size: 20px;
+        max-width:35%;
     }
 
 }
