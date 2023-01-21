@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import "@fontsource/poppins";
 import "./App.css";
 import Image from "../components/image";
 import { v4 as uuidv4 } from "uuid";
@@ -226,7 +227,7 @@ const App = ({location}) => {
                 <Socials/>
                 <footer
                     style={{
-                        fontFamily: `Roboto, Sans-Serif`,
+                        fontFamily: `Poppins, Sans-Serif`,
                         color: `white`,
                         marginTop: `var(--space-5)`,
                         fontSize: `var(--font-sm)`,

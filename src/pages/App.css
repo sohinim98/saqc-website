@@ -32,7 +32,7 @@
     color: #454543;
     display: flex;
     flex-direction: column;
-    font-family: Roboto, Sans-Serif;
+    font-family: Poppins, Sans-Serif;
     justify-content: space-around;
     width: 100%;
 }
@@ -53,7 +53,7 @@
 /*Audio Player*/
 .audio-title {
     color: white;
-    font-family: Roboto, Sans-Serif;
+    font-family: Poppins, Sans-Serif;
     font-size: 16px;
     text-align: center;
 }
@@ -70,7 +70,7 @@
 .message-of-the-month {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    font-family: Roboto, Sans-Serif;
+    font-family: Poppins, Sans-Serif;
     font-size: 16px;
     max-width: 1024px;
     padding: 20px;
@@ -91,7 +91,7 @@
 .donation {
     border: none;
     color: white;
-    font-family: Roboto, Sans-Serif;
+    font-family: Poppins, Sans-Serif;
     font-size: 16px;
 }
 .donation-input {
@@ -116,7 +116,7 @@
 }
 .donation-success {
     color: white;
-    font-family: Roboto, Sans-Serif;
+    font-family: Poppins, Sans-Serif;
     text-align: center;
 }
 .video-interview-container {
@@ -151,7 +151,7 @@
 
 .team-container {
     color: white;
-    font-family: Roboto, Sans-Serif;
+    font-family: Poppins, Sans-Serif;
     padding: 0 16px;
     max-width: 350px;
 }

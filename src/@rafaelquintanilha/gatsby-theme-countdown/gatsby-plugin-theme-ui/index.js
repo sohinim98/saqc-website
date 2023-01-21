@@ -13,7 +13,7 @@ export default merge({}, theme, {
   },
   fonts: {
     default:
-      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Poppins, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
   },
   fontSizes: [8, 10, 12, 14, 16, 18, 36, 64, 80],
   lineHeights: {

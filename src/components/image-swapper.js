@@ -18,7 +18,7 @@ const ImageSwapper = () => {
             else {
                 setCurrentIndex(currentIndex + 1);
             }
-        }, 2000)
+        }, 4000)
 
         return () => clearInterval(intervalId);
     }, [currentIndex,images.length])

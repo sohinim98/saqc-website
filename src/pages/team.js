@@ -81,7 +81,7 @@ const Team = () => {
                 <footer
                     style={{
                         color: `white`,
-                        fontFamily: `Roboto, Sans-Serif`,
+                        fontFamily: `Poppins, Sans-Serif`,
                         fontSize: `var(--font-sm)`,
                         marginTop: `var(--space-5)`,
                         textAlign: `center`
