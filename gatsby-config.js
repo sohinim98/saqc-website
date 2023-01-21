@@ -60,6 +60,7 @@ module.exports = {
         'gatsby-plugin-image',
         `gatsby-plugin-react-helmet`,
         `gatsby-remark-images`,
-        `gatsby-plugin-smoothscroll`
+        `gatsby-plugin-smoothscroll`,
+        `gatsby-plugin-netlify`
     ],
 }
