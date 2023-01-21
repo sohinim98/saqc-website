@@ -13,13 +13,14 @@
     height: 36px;
     border-style: none;
     font-size: 16px;
+    max-width: 100%;
     padding: 2px 40px 2px 10px;
 }
 .name {
     width: 130px;
 }
 .email {
-    width: 200px;
+    width: 40px;
     border-left: 2px solid white;
 }
 .sign-up-success, .errorMsg {
@@ -53,4 +54,10 @@
 ::placeholder {
     color: white;
     opacity: 1; /* Firefox */
+}
+
+@media (min-width:1024px)  {
+    .email {
+        width: 200px;
+    }
 }
